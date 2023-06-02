@@ -9,4 +9,6 @@ The USGS is interested in building a new set of tools that will allow them to vi
 ## Part 1: Create the Earthquake Visualization
 Your first task is to visualize an earthquake dataset
 
+Here's my map with part 1 visualization
+
 ![Alt text](https://github.com/NoelleMtz/leaflet-challenge/blob/main/Leaflet-Part-1/Images/noelle_map.png?raw=true)
