@@ -107,13 +107,17 @@ function createMap(earthquakes) {
         let div = L.DomUtil.create("div", "info legend");
         let depth = [-10, 10, 30, 50, 70, 90];
 
-  div.innerHTML += "<h1>USGS: Earthquakes in the past 7 days<br />" +
-    "<h3>Earthquake Depth (m) </h3>"
+  div.innerHTML += "<h1>Latest Earthquakes<br/>" +
+    "<h2> Earthquake Depth (m) <h2/>"
 
+    // legend boxes
   for (var i = 0; i < depth.length; i++) {
     div.innerHTML +=
     '<i style="background:' + chooseColor(depth[i] + 1) + '"></i> ' + depth[i] + (depth[i + 1] ? '&ndash;' + depth[i + 1] + '<br>' : '+');
   }
+
+  div.innerHTML += 
+    "<br> <br> <b>Data Source </b>: U.S. Geological Survey, All Earthquakes-past week</br>"
   return div;
 };
 legend.addTo(myMap)
